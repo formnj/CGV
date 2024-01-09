@@ -11,6 +11,10 @@ body {overflow-x:hidden;}
 .iframe_inner {background:url('../images/mo/bg_wrap.png') 50% no-repeat; background-size:cover; text-align:center;}
 .iframe_wrap iframe {width:100%; height:100%;}
 
+<<<<<<< HEAD
 #wrap {margin:0 auto; overflow-x:hidden;}
 
 .content {}
+=======
+#wrap {margin:0 auto; overflow-x:hidden;}
+>>>>>>> 270fa32fa4873a78ab99c8780a3e85de9867172d

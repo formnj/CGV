@@ -5,11 +5,19 @@
 body::-webkit-scrollbar {display: none;}
 
 
-body {background-color:#161616; overflow-x:hidden;}
-
-.content {}
+body {background-color:#000; overflow-x:hidden;}
+#container {width:100%;}
+.content {width:360px; margin: 0 auto;}
+.inner {width:94%; margin:0 auto;}
+#wrap {margin:0 auto; overflow-x:hidden; position:relative;}
+header {position:relative}
+header a {position:absolute; top:0; left:0; display:inline-block; width:40px; height:40px;}
 
 /*----header wrap-----*/
+header .main_home {width:55px;  left:10px;}
+header .main_movie {width:50px; left:78px}
+header .talkback_go {width:45px; left:129px;}
+
 .header_wrap .check_ani em {min-height:29px; padding-left:48px; position:relative; display:block;}
 .header_wrap .check_ani em:before {width:90px; height:29px; background-color:#161616; border:0; border:1px solid #ED3124;  border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}
 .header_wrap .check_ani input[type='checkbox'] {opacity:0;}
@@ -18,3 +26,52 @@ body {background-color:#161616; overflow-x:hidden;}
 .header_wrap .check_ani input[type='checkbox']:checked + em:after {left:40px; background-color:#ED3124; background-image: url('../images/mo/Type_B/무비.png'); background-position:50% 50%; background-repeat:no-repeat; background-size:23px auto;}
 
 
+.chart .board_type_toggle > dt {border-top:1px solid #e8e5e2; position:relative;}
+.chart .board_type_toggle > dt:first-of-type {border-top: none;}
+.chart .board_type_toggle > dt:before, .board_type_toggle > dd:before {font-size:28px; font-weight:500; position:absolute; top:5px; left:20px;}
+.chart .board_type_toggle > dt a {padding:15px; font-size:18px; display:block;}
+.chart .board_type_toggle > dd {padding:15px; line-height:1.5; background-color:#f2f2f2; border-top:1px solid #dbdbdb; position:relative; overflow:hidden; display:none; transition:height 0.2s ease-out;}
+.show {display:block !important;}
+
+
+/*----chart-----*/
+.chart {width:100%; margin-top:30px; padding:20px 0 20px 0; background-color:#fff; border-radius:30px; position:relative; z-index: 10;}
+.chart .inner {position:relative;}
+.btn {width:103px; height:36px; margin: 0 auto; }
+
+
+/*------bg_1/bg_2------*/
+.bg_1 {margin-top:-90px;}
+.bg_2 {padding:0 20px; position:relative; top:-80px;}
+.bg_2 img {width:100%;}
+
+/*---favorite----*/
+.favorite {position:relative; top:-100px;}
+
+/*-----event-----*/
+.event {width:100%; padding:20px 0 30px 0; background-color:#fff; border-radius:30px; position:relative; margin-top:-100px;}
+.cht {width:58.28px; position:absolute; top:-60px; right:60px;}
+.event .btn {margin-top:30px}
+
+footer {position:relative;}
+footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3px}
+
+
+/*--------talkback-----------*/
+.talkback {position:absolute; background-color: #fff; top:0; left:-1000px; right:0; bottom:0; z-index: 15; transition: all 0.3s; opacity:0; visibility:hidden; display:none;} 
+.talkback header > div {width: 100%; padding:10px;}
+.talkback .check_ani {margin-bottom:30px; display:flex; justify-content: flex-end;}
+.talkback span {width:76px; height:18px; margin-right:10px; display:inline-block;}
+.talkback #container {margin-top:20px;}
+
+
+
+.check input[type='checkbox']:checked + .label:after {width:5px; height:9px; border:2px solid #333; border-top:0; border-left:0; top:2px; left:4px; -webkit-transform:rotate(45deg); transform:rotate(45deg);}
+.check_ani {position:relative; display:inline-block;}
+.check_ani input {margin:0 0 0 1px; position:absolute; opacity:0;}
+.check_ani em {min-height:22px; padding-left:48px; position:relative; display:block;}
+.check_ani em:before {width:42px; height:22px; background-color:#ccc; border:0; border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}
+.check_ani input[type='checkbox'] {opacity:0;}
+.check_ani input[type='checkbox'] + em:after {width:18px; height:18px; background-color:#fff; border-radius:50%; content:''; position:absolute; top:50%; left:2px; z-index:1; display:block; transform:translateY(-50%); transition:all 0.2s;}
+.check_ani input[type='checkbox']:checked + em:before {background-color:#ff7200;}
+.check_ani input[type='checkbox']:checked + em:after {left:22px;}

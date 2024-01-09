@@ -12,6 +12,20 @@
     <script src="../js/swiper.js"></script>
     <link rel="stylesheet" href="../css/swiper.css" type="text/css">
 
+    <style>
+        body {height:100%; background-color:#2e2e2e;}
+        #wrap {height:100vh; display:flex; flex-direction:column; justify-content:space-between;}
+        header {padding-top:60px; text-align:center;}
+        header span {width:115px; margin:0 auto; display:block;}
+        footer {padding:20px; text-align:center;}
+        h2 {margin-bottom:60px;}
+        h2 img {height:28px;}
+        .content {max-width:1650px; margin:0 auto; display:flex; justify-content:space-between;}
+        .content > div {text-align:center;}
+        .inner {display:flex; align-items:end;}
+        .inner span {color:#fff; font-size:18px; font-weight:bold;}
+    </style>
+
     <script>
         $(document).ready(function(){
         });
@@ -19,15 +33,39 @@
 </head>
 <body>
     <div id="wrap">
+
         <header>
+            <span><img src="../images/common/logo.png" /></span>
         </header>
 
         <div id="container">
             <div class="content">
-                <a href="./mobile.html?type=B">Type B</a>
+                <div>
+                    <h2><img src="../images/common/txt_A.png"></h2>
+                    <div class="inner">
+                        <a href="./mobile.html?type=A" style="width:360px;">
+                            <p><img src="../images/common/type_A.png" /></p>
+                            <span>Mobile</span>                        
+                        </a>
+                        <a href="./pc.html" style="width:600px;">
+                            <p><img src="../images/common/pc.png" /></p>
+                            <span>PC</span>                        
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2><img src="../images/common/txt_B.png"></h2>
+                    <div class="inner">
+                        <a href="./mobile.html?type=B" style="width:360px;">
+                            <p><img src="../images/common/type_B.png" /></p>
+                            <span>Mobile</span>                        
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
+            <p><img src="../images/common/ci_footer.png"></p>
         </footer>
     </div>
 
