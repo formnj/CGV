@@ -26,3 +26,5 @@ section {padding:0 20px;}
 .sec06 .swiper-pagination span.swiper-pagination-bullet-active {background-color:#000;}
 
 .sec07 {padding-top:49px; padding-bottom:56px; background-color:#F0F0F0;}
+
+.btnSection_bottom {position:fixed; bottom:0; right:0; left:0;}
