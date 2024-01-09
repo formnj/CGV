@@ -15,6 +15,10 @@ img {max-width:100%;}
 
 button {cursor:pointer;}
 
+::-webkit-scrollbar {width: 4px;}
+::-webkit-scrollbar-thumb {background: #d9d9d9; background-clip: padding-box; border: 2px solid transparent; border-radius: 8px;}
+::-webkit-scrollbar-track {background: transparent;}
+
 /* tab */
 .tab_wrap [class*='tab_type']:after {clear:both; content:''; display:block;}
 .tab_wrap [class*='tab_type'] > li {float:left; text-align:center;}
