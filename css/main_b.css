@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+@import url('../css/common.css');
+
+body::-webkit-scrollbar {display: none;}
+
+
+body {background-color:#161616; overflow-x:hidden;}
+
+.content {}
+
+/*----header wrap-----*/
+.header_wrap .check_ani em {min-height:29px; padding-left:48px; position:relative; display:block;}
+.header_wrap .check_ani em:before {width:90px; height:29px; background-color:#161616; border:0; border:1px solid #ED3124;  border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}
+.header_wrap .check_ani input[type='checkbox'] {opacity:0;}
+.header_wrap .check_ani input[type='checkbox'] + em:after {width:50px; height:29px; font-size:12px; color:#fff; font-weight:900; line-height:29px; text-align:center; background-color:#ED3124; border-radius:100px; content:''; position:absolute; top:50%; left:2px; z-index:1; display:block; transform:translateY(-50%); transition:all 0.2s;}
+.header_wrap .check_ani input[type='checkbox']:checked + em:before {background-color:#fff;}
+.header_wrap .check_ani input[type='checkbox']:checked + em:after {left:40px; background-color:#ED3124; background-image: url('../images/mo/Type_B/무비.png'); background-position:50% 50%; background-repeat:no-repeat; background-size:23px auto;}
+
+

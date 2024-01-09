@@ -5,7 +5,7 @@
 body::-webkit-scrollbar {display: none;}
 
 
-body {background-color:#161616; overflow-x:hidden;}
+body {overflow-x:hidden;}
 
 .iframe_wrap {height:100vh; position:relative; display:flex; flex-wrap:wrap; align-items:center; justify-content:center;}
 .iframe_inner {background:url('../images/mo/bg_wrap.png') 50% no-repeat; background-size:cover; text-align:center;}
@@ -14,11 +14,3 @@ body {background-color:#161616; overflow-x:hidden;}
 #wrap {margin:0 auto; overflow-x:hidden;}
 
 .content {}
-
-/*----header wrap-----*/
-.header_wrap .check_ani em {min-height:29px; padding-left:48px; position:relative; display:block;}
-.header_wrap .check_ani em:before {width:90px; height:29px; background-color:#ED3124; border:0; border:1px solid #ED3124;  border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}
-.header_wrap .check_ani input[type='checkbox'] {opacity:0;}
-.header_wrap .check_ani input[type='checkbox'] + em:after {width:50px; height:29px; background-color:#fff; border-radius:100px; content:''; position:absolute; top:50%; left:2px; z-index:1; display:block; transform:translateY(-50%); transition:all 0.2s;}
-.header_wrap .check_ani input[type='checkbox']:checked + em:before {background-color:#ED3124;}
-.header_wrap .check_ani input[type='checkbox']:checked + em:after {left:22px;}
