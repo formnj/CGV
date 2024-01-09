@@ -3,7 +3,8 @@
 #wrap {margin:0 auto; overflow-x:hidden;}
 img {max-width:100%; display:block;}
 
-.action_bar {box-shadow:0 -4px 20px 0 rgba(0,0,0,0.12);}
+.action_bar {border:0;}
+.action_bar:after {height:20px; margin-bottom:-20px; background-color:#fff; box-shadow:0 -4px 20px 0 rgba(0,0,0,0.12); content:''; position:absolute; bottom:80.952388%; right:0; left:0; z-index:-1; display:block;}
 
 .main {transition:background 0.25s;}
 .main.bg_01 {background:url('../images/mo/Type_A/BG1.png') 0 0 no-repeat; background-size:100% auto;}
