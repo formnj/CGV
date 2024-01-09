@@ -86,3 +86,5 @@ footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3
 .check_ani input[type='checkbox']:checked + em:before {background-color:#ff7200;}
 .check_ani input[type='checkbox']:checked + em:after {left:22px;}
 
+.reply_talk.active:after {background-color:rgba(0,0,0,0.4); content:''; position:fixed; top:0; right:0; bottom:0; left:0;}
+
