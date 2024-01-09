@@ -7,7 +7,7 @@ body::-webkit-scrollbar {display: none;}
 
 body {background-color:#000; overflow-x:hidden;}
 #container {width:100%;}
-.content {width:360px; margin: 0 auto;}
+.content {margin: 0 auto;}
 .inner {width:94%; margin:0 auto;}
 #wrap {margin:0 auto; overflow-x:hidden; position:relative;}
 header {position:relative}
@@ -30,7 +30,7 @@ header .talkback_go {width:45px; left:129px;}
 .chart .board_type_toggle > dt:first-of-type {border-top: none;}
 .chart .board_type_toggle > dt:before, .board_type_toggle > dd:before {font-size:28px; font-weight:500; position:absolute; top:5px; left:20px;}
 .chart .board_type_toggle > dt a {padding:15px; font-size:18px; display:block;}
-.chart .board_type_toggle > dd {padding:15px; line-height:1.5; background-color:#f2f2f2; border-top:1px solid #dbdbdb; position:relative; overflow:hidden; display:none; transition:height 0.2s ease-out;}
+.chart .board_type_toggle > dd {padding:15px; line-height:1.5; background-color:#fff; border-top:1px solid #dbdbdb; position:relative; overflow:hidden; transition:height 0.2s ease-out; display: none;}
 .show {display:block !important;}
 
 
@@ -58,11 +58,21 @@ footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3
 
 
 /*--------talkback-----------*/
-.talkback {position:absolute; background-color: #fff; top:0; left:-1000px; right:0; bottom:0; z-index: 15; transition: all 0.3s; opacity:0; visibility:hidden; display:none;} 
+.talkback a, .action_bar a {position:absolute; bottom:0; left:0; display:inline-block; width:50px; height:50px;}
+.talkback section {position:relative;}
+.main_movie {position:absolute; top:0; left:0; right:0; bottom:0;}
+.talkback {position:absolute; background-color: #fff; top:0; left:-2000px; right:0; z-index: 15; transition: all 0.3s; opacity:0; display:none;} 
 .talkback header > div {width: 100%; padding:10px;}
 .talkback .check_ani {margin-bottom:30px; display:flex; justify-content: flex-end;}
 .talkback span {width:76px; height:18px; margin-right:10px; display:inline-block;}
 .talkback #container {margin-top:20px;}
+.talkback #inner section {position:relative;}
+.talkback .main_movie {width:50px; left:78px}
+.homego {bottom:15px !important; left:20px !important;}
+.review {bottom:15px !important; left:160px !important;}
+.mypage {bottom:15px !important; left:290px !important;}
+
+
 
 
 
@@ -75,3 +85,4 @@ footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3
 .check_ani input[type='checkbox'] + em:after {width:18px; height:18px; background-color:#fff; border-radius:50%; content:''; position:absolute; top:50%; left:2px; z-index:1; display:block; transform:translateY(-50%); transition:all 0.2s;}
 .check_ani input[type='checkbox']:checked + em:before {background-color:#ff7200;}
 .check_ani input[type='checkbox']:checked + em:after {left:22px;}
+

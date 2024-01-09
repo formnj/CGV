@@ -7,18 +7,26 @@ body::-webkit-scrollbar {display: none;}
 
 body {background-color:#000; overflow-x:hidden;}
 
-.content {width:360px; position:relative;}
+.content {position:relative;}
 .inner {width:94%; margin:0 auto;}
-#wrap {margin:0 auto; overflow-x:hidden; position:relative;}
+#wrap {margin:0 auto; background-color:#000; overflow-x:hidden; position:relative;}
 
 /*-------------------------------*/
-
-header {position:relative;}
+.action_bar a {position:absolute; bottom:0; left:0; display:inline-block; width:50px; height:50px;}
 header .header_btn {position:absolute; top:0; right:0; left:0}
-.content {width:360px; background-color:#fff;}
+.content {background-color:#fff;}
 .inner {width:94%; margin:0 auto;}
-a {position:absolute; display:block; top:0; left:0; width:40px; height:40px}
+a.close{position:absolute; display:block; top:8px; right:5px; width:40px; height:40px; z-index: 15;}
+.content {position:relative;}
+.title {position:absolute;}
+.key {position:absolute; bottom:0px; left:0;}
+a {position:absolute; display:block; top:0; width:40px; height:40px;}
 a.home {top:10px; left:10px}
-a.talk {width:110px; top:565px; left:10px}
-a.movie {width:110px; top:565px; left:120px}
-a.cgvbag {width:110px; top:565px; left:230px}
+a.talk {width:110px; top:600px; left:15px}
+a.movie {width:110px; top:600px; left:130px}
+a.cgvbag {width:110px; top:600px; left:250px}
+a.close {right:0 !important;}
+.homego {bottom:15px !important; left:20px !important;}
+.review {bottom:15px !important; left:160px !important;}
+.mypage {bottom:15px !important; left:290px !important;}
+
