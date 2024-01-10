@@ -45,7 +45,7 @@
                 <img src="../images/mo/Type_B/new_Header.png" alt="">
                 <a href="#" class="main_home"></a>
                 <a href="#none" class="main_movie"></a>
-                <a href="#none" class="talkback_go"></a>
+                <a href="#none" class="talkback_go" onclick="$('.reply_talk').removeClass('active').attr('style','max-height:100vh; overflow-y:auto; position:fixed; bottom:0; right:0; left:0; display:none;')"></a>
                 <nav>
                     <img src="../images/mo/Type_B/Menu.png" alt="">
                 </nav>
@@ -101,7 +101,7 @@
                 <img src="../images/mo/Type_B/new2_header.png" alt="">
                 <a href="#" class="main_home"></a>
                 <a href="#none" class="main_movie"></a>
-                <a href="#none" class="talkback_go"></a>
+                <a href="#none" class="talkback_go" onclick="$('.reply_talk').removeClass('active').attr('style','max-height:100vh; overflow-y:auto; position:fixed; bottom:0; right:0; left:0; display:none;')"></a>
                 <div>
                     <img src="../images/mo/Type_B/Group_48114626.png" alt="">
                 </div>
@@ -122,12 +122,11 @@
 
                         <section onclick="$('.reply_talk').addClass('active').slideDown(); $('body').css({height:'100%', overflow:'hidden'}); $('.action_bar').css({bottom:'-76.2px'})">
                             <img src="../images/mo/Type_B/Frame 48114731.png" alt="">
-                            <a href="#none" class="main_movie"></a>
                         </section>
                     </div>
                 </div>
                 <!-- 댓톡 -->
-                <p class="reply_talk" style="max-height:100vh; overflow-y:auto; position:fixed; bottom:0; right:0; left:0; display:none;" onclick="$(this).slideUp(); $('body').removeAttr('style');">
+                <p class="reply_talk" style="max-height:100vh; overflow-y:auto; position:fixed; bottom:0; right:0; left:0; display:none;" onclick="$(this).slideUp(); $('body').removeAttr('style'); setTimeout(function(){$(location).attr('href', './mo_B_sub_01_1.html')},100);">
                     <img style="position:relative; z-index:15; display:block;" src="../images/mo/Type_B/reply_talk.png" />
                     <a href="./mo_B_main.html" style="position:absolute; top:0; right:0;"></a>
                 </p>

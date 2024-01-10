@@ -14,7 +14,7 @@ a.home, a.talk, a.movie, a.cgvbag {position:absolute; display:block; top:0; widt
 #wrap {margin:0 auto; background-color:#000; overflow-x:hidden; position:relative;}
 
 /*-------------------------------*/
-.action_bar a {position:absolute; bottom:0; left:0; display:inline-block; width:50px; height:50px;}
+.action_bar a {position:absolute; bottom:0; display:inline-block; width:50px; height:94px;}
 header .header_btn {position:absolute; top:0; right:0; left:0}
 .content {background-color:#fff;}
 .inner {width:94%; margin:0 auto;}
@@ -28,7 +28,7 @@ a.talk {width:110px; top:570px; left:15px}
 a.movie {width:110px; top:570px; left:130px}
 a.cgvbag {width:110px; top:570px; left:250px}
 a.close {right:0 !important;}
-.homego {bottom:15px !important; left:20px !important;}
-.review {bottom:15px !important; left:160px !important;}
-.mypage {bottom:15px !important; left:290px !important;}
+.action_bar .homego {left:32px !important;}
+.action_bar .review {left:210px !important;}
+.action_bar .mypage {left:initial !important; right:35px;}
 
