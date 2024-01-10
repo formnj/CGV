@@ -14,9 +14,9 @@ header {position:relative}
 header a {position:absolute; top:0; left:0; display:inline-block; width:40px; height:40px;}
 
 /*----header wrap-----*/
-header .main_home {width:83px; top:12px; left:10px;}
-header .main_movie {width:50px; top:14px; left:109px}
-header .talkback_go {width:45px; top:14px; left:168px;}
+header .main_home {width:80px; top:0; left:0;}
+header .main_movie {width:50px; top:0; left:109px}
+header .talkback_go {width:45px; top:0; left:168px;}
 
 .header_wrap .check_ani em {min-height:29px; padding-left:48px; position:relative; display:block;}
 .header_wrap .check_ani em:before {width:90px; height:29px; background-color:#161616; border:0; border:1px solid #ED3124;  border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}

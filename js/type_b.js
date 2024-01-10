@@ -45,7 +45,18 @@ $(function(){
               )
           )
   }
-  $('.board_type_toggle dt > a').click(function() {
-    toggle_slide(this);
+  $('.board_type_toggle > * > *').click(function() {
+    var _target = $(this);
+    if (_target.parent()[0].nodeName == 'DT') {
+      $('.board_type_toggle dd').stop().slideUp();
+      $('.board_type_toggle dt').stop().slideDown();
+      $(this).parent().stop().slideUp();
+      $(this).parent().next('dd').stop().slideDown();
+    } else if(_target.parent()[0].nodeName == 'DD') {
+      $('.board_type_toggle dd').stop().slideUp();
+      $('.board_type_toggle dt').stop().slideDown();
+    }
+
+    // toggle_slide(this);
 });
 })//ready
