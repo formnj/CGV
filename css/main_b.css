@@ -14,9 +14,9 @@ header {position:relative}
 header a {position:absolute; top:0; left:0; display:inline-block; width:40px; height:40px;}
 
 /*----header wrap-----*/
-header .main_home {width:80px; top:0; left:0;}
-header .main_movie {width:50px; top:0; left:109px}
-header .talkback_go {width:45px; top:0; left:168px;}
+header .main_home {width:80px; top:14px; left:0;}
+header .main_movie {width:50px; top:14px; left:109px}
+header .talkback_go {width:45px; top:14px; left:168px;}
 
 .header_wrap .check_ani em {min-height:29px; padding-left:48px; position:relative; display:block;}
 .header_wrap .check_ani em:before {width:90px; height:29px; background-color:#161616; border:0; border:1px solid #ED3124;  border-radius:60px; content:''; position:absolute; top:0; left:0; display:inline-block;}
@@ -58,7 +58,7 @@ footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3
 
 
 /*--------talkback-----------*/
-.talkback a, .action_bar a {position:absolute; bottom:0; left:0; display:inline-block; width:50px; height:50px;}
+.action_bar a {position:absolute; bottom:0; left:0; display:inline-block; width:50px; height:50px;}
 .talkback section {position:relative;}
 .main_movie {position:absolute; top:0; left:0; right:0; bottom:0;}
 .talkback {position:absolute; background-color: #fff; top:0; left:-2000px; right:0; z-index: 15; transition: all 0.3s; opacity:0; display:none;} 
@@ -67,7 +67,6 @@ footer > div > img {width:60px; height:60px; position:absolute; top:65%; right:3
 .talkback span {width:76px; height:18px; margin-right:10px; display:inline-block;}
 .talkback #container {margin-top:20px;}
 .talkback #inner section {position:relative;}
-.talkback .main_movie {width:50px; left:78px}
 .homego {bottom:15px !important; left:20px !important;}
 .review {bottom:15px !important; left:160px !important;}
 .mypage {bottom:15px !important; left:290px !important;}
