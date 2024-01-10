@@ -7,7 +7,7 @@ body::-webkit-scrollbar {display: none;}
 
 body {background-color:#000; overflow-x:hidden;}
 
-a.home, a.talk, a.movie, a.cgvbag {position:absolute; display:block; top:0; width:40px; height:40px;}
+a.home {position:absolute; display:block; top:0; width:40px; height:40px;}
 
 .content {position:relative;}
 .inner {width:94%; margin:0 auto;}
@@ -24,9 +24,10 @@ a.close{position:absolute; display:block; top:8px; right:5px; width:40px; height
 .key {position:absolute; bottom:0px; left:0;}
 /* a {position:absolute; display:block; top:0; width:40px; height:40px;} */
 a.home {top:10px; left:10px}
-a.talk {width:110px; top:570px; left:15px}
-a.movie {width:110px; top:570px; left:130px}
-a.cgvbag {width:110px; top:570px; left:250px}
+a.talk, a.movie, a.cgvbag {width:33.3333%; height:40px; top:745px; position:absolute;}
+a.talk {left:0}
+a.movie {left:33.3333%}
+a.cgvbag {left:66.666%}
 a.close {right:0 !important;}
 .action_bar .homego {left:32px !important;}
 .action_bar .review {left:210px !important;}

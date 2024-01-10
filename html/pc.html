@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="../css/mo_main.css" type="text/css">
     <link rel="stylesheet" href="../css/main_a.css" type="text/css">
     <style>
-        body {background-color:#232323;}
+        body, .bg_wrap {background-image:url('../images/common/bg_pc.png'); background-position:0 0; background-repeat:repeat-x;}
+        .bg_wrap {height:677px; position:fixed; top:0; right:0; left:0; z-index:0; display:flex; flex-wrap:nowrap; align-items:center;}
+        .bg_wrap div {width:100%;}
+        .bg_wrap img {margin:0 auto;}
         body > div > div {width:100%;}
         .action_bar {width:500px; margin-left:-250px; left:50%;}
     </style>
@@ -116,6 +119,11 @@
 </head>
 
 <body>
+    <div class="bg_wrap">
+        <div><img src="../images/common/bg-wrap_1.png" style="width:419px" /></div>
+        <div style="width:500px;">&nbsp;</div>
+        <div><img src="../images/common/bg_wrap_2.png" style="width:371px;" /></div>
+    </div>
     <div style="display:flex; justify-content:center;">
         <!-- left -->
         <div class="left">Left</div>
